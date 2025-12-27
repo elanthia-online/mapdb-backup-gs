@@ -1,75 +1,26 @@
 diffing old /home/runner/work/mapdb-backup-gs/mapdb-backup-gs/map_files/mapdb.json to new /tmp/temp_map.repo
 --------------------------------------------------
-13445 [Library Aies, Hall of Being] Ta'Illistim (u13106004)
-  image: nil is now "en-ta_illistim_buildings.png"
-  image_coords: nil is now [1011, 1057, 1067, 1116]
+28618 [Viridian Meadows, Barn] Mist Harbor (u12013100)
+    added paths:   ["Obvious exits: northeast, northwest, out"]
+  added wayto:
+    36187: [Barn, Northeastern Aisle] => "ne"
+    36188: [Barn, Northeastern Aisle] => "nw"
+  added timeto:
+    36187: [Barn, Northeastern Aisle] => 0.2
+    36188: [Barn, Northeastern Aisle] => 0.2
 --------------------------------------------------
-13923 [Riverside, Boat Dock] the hamlet of Ravelin (u14200031)
-  removed timeto:
-    13966: [Mistydeep, Ravelin] => 0.2
+36187 [Barn, Northeastern Aisle] -- new room
+{"id"=>36187, "title"=>["[Barn, Northeastern Aisle]"], "description"=>["This barn is cavernous, but still very well lit via the combination of flickering flames emanating from delicate ivory sconces at regular intervals around the perimeter of the barn, and a discreet smattering of indirect lighting from various windows placed in the ceiling.  The floor underfoot is straw, but it is clean and sweet-smelling, and has been carefully raked to lie flat.  The center of the space contains a large number of chests and crates, each one placed directly across from a stall."], "paths"=>["Obvious exits: southwest"], "location"=>"Mist Harbor", "wayto"=>{"28618"=>"sw"}, "timeto"=>{"28618"=>0.2}, "uid"=>[12013101]}
 --------------------------------------------------
-15673 [Library Aies, Hall of Magic] Ta'Illistim (u13106019)
-  image: nil is now "en-ta_illistim_buildings.png"
-  image_coords: nil is now [165, 1220, 222, 1275]
---------------------------------------------------
-32696 [Library Aies, Hall of Being] Ta'Illistim (u13106006)
-  image: nil is now "en-ta_illistim_buildings.png"
-  image_coords: nil is now [890, 1057, 946, 1114]
---------------------------------------------------
-32697 [Library Aies, Hall of Queens] Ta'Illistim (u13106007)
-  image: nil is now "en-ta_illistim_buildings.png"
-  image_coords: nil is now [889, 1220, 946, 1275]
---------------------------------------------------
-32698 [Library Aies, Hall of Being] Ta'Illistim (u13106008)
-  image: nil is now "en-ta_illistim_buildings.png"
-  image_coords: nil is now [770, 1059, 826, 1115]
---------------------------------------------------
-32699 [Library Aies, Hall of Flora] Ta'Illistim (u13106009)
-  image: nil is now "en-ta_illistim_buildings.png"
-  image_coords: nil is now [768, 1220, 826, 1276]
---------------------------------------------------
-32700 [Library Aies, Hall of Being] Ta'Illistim (u13106010)
-  image: nil is now "en-ta_illistim_buildings.png"
-  image_coords: nil is now [647, 1058, 705, 1114]
---------------------------------------------------
-32701 [Library Aies, Hall of Fauna] Ta'Illistim (u13106011)
-  image: nil is now "en-ta_illistim_buildings.png"
-  image_coords: nil is now [647, 1220, 704, 1274]
---------------------------------------------------
-32702 [Library Aies, Hall of Being] Ta'Illistim (u13106012)
-  image: nil is now "en-ta_illistim_buildings.png"
-  image_coords: nil is now [527, 1057, 584, 1114]
---------------------------------------------------
-32703 [Library Aies, Hall of Glory] Ta'Illistim (u13106013)
-  image: nil is now "en-ta_illistim_buildings.png"
-  image_coords: nil is now [528, 1217, 585, 1275]
---------------------------------------------------
-32704 [Library Aies, Hall of Being] Ta'Illistim (u13106014)
-  image: nil is now "en-ta_illistim_buildings.png"
-  image_coords: nil is now [406, 1058, 462, 1114]
---------------------------------------------------
-32705 [Library Aies, Hall of Lore] Ta'Illistim (u13106015)
-  image: nil is now "en-ta_illistim_buildings.png"
-  image_coords: nil is now [407, 1220, 463, 1275]
---------------------------------------------------
-32706 [Library Aies, Hall of Being] Ta'Illistim (u13106016)
-  image: nil is now "en-ta_illistim_buildings.png"
-  image_coords: nil is now [285, 1057, 344, 1114]
---------------------------------------------------
-32707 [Library Aies, Hall of Time] Ta'Illistim (u13106017)
-  image: nil is now "en-ta_illistim_buildings.png"
-  image_coords: nil is now [285, 1218, 342, 1275]
---------------------------------------------------
-32708 [Library Aies, Hall of Being] Ta'Illistim (u13106018)
-  image: nil is now "en-ta_illistim_buildings.png"
-  image_coords: nil is now [164, 1058, 222, 1115]
+36188 [Barn, Northeastern Aisle] -- new room
+{"id"=>36188, "title"=>["[Barn, Northeastern Aisle]"], "description"=>["This barn is cavernous, but still very well lit via the combination of flickering flames emanating from delicate ivory sconces at regular intervals around the perimeter of the barn, and a discreet smattering of indirect lighting from various windows placed in the ceiling.  The floor underfoot is straw, but it is clean and sweet-smelling, and has been carefully raked to lie flat.  The center of the space contains a large number of chests and crates, each one placed directly across from a stall."], "paths"=>["Obvious exits: southeast"], "location"=>"Mist Harbor", "wayto"=>{"28618"=>"se"}, "timeto"=>{"28618"=>0.2}, "uid"=>[12013102]}
 --------------------------------------------------
 old map max: 36186
-current map max: 36186
+current map max: 36188
 old map size: 36185
-current map size: 36185
-16 rooms with changes found.
-0 new rooms
+current map size: 36187
+1 rooms with changes found.
+2 new rooms
 0 deleted rooms
 0 room titles no longer found
 0 room descriptions no longer found
