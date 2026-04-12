@@ -17,11 +17,11 @@ permissions:
 jobs:
   mirror:
     if: "!contains(github.event.head_commit.message, 'Repo updates within last')"
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     timeout-minutes: 3
     steps:
       - name: Checkout configuration
-        uses: actions/checkout@v4
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           persist-credentials: false
           fetch-depth: 0
@@ -31,7 +31,7 @@ jobs:
         if: "${{ github.event.inputs.mapDBCommitHash != '' }}"
 
       - name: Setup ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@4c56a21280b36d862b5fc31348f463d60bdc55d5 # v1.301.0
         with:
           ruby-version: '3.2'
           bundler-cache: true
@@ -78,7 +78,7 @@ jobs:
 
       - name: Push changes
         if: steps.check_changes.outputs.has_changes == 'true'
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@4cc74773234f74829a8c21bc4d69dd4be9cfa599 # v1.1.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
