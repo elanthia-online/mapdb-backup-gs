@@ -2,13 +2,21 @@ diffing old /home/runner/work/mapdb-backup-gs/mapdb-backup-gs/map_files/mapdb.js
 --------------------------------------------------
 8146 [Shrine of Leya, Northwest Wall] the distant forest (u386071)
 --------------------------------------------------
-12272 [Razor Grass Road] Mist Harbor (u739414)
-  removed wayto:
-    31247: [Thresk's Outfitting] => "go glass-front shop"
-  removed timeto:
-    31247: [Thresk's Outfitting] => 0.2
+9012 [Solhaven, Spiral Passageway] Solhaven (u733005)
+  added wayto:
+    36629: [Arctius' General Store] => "go quoins-faced store"
+  added timeto:
+    36629: [Arctius' General Store] => 0.2
 --------------------------------------------------
 16361 [Sadie's Lounge] Mist Harbor (u3204009)
+--------------------------------------------------
+16745 [Aradhul Road, Rocky Trail] Aradhul Road (u17005027)
+  old timeto['16746'] =    nil
+  new timeto['16746'] =    15
+--------------------------------------------------
+16746 [Aradhul Road, Rocky Trail] Aradhul Road (u17005026)
+  old timeto['16745'] =    nil
+  new timeto['16745'] =    15
 --------------------------------------------------
 21130 [Whirlin's Wonderous Widgets] Mist Harbor (u)
 --------------------------------------------------
@@ -21,82 +29,18 @@ diffing old /home/runner/work/mapdb-backup-gs/mapdb-backup-gs/map_files/mapdb.js
 34580 [Sorcerer Guild, Ebonshade Tower] FWI Sorcerer Guild (u669010)
 --------------------------------------------------
 36607 [Skyship, Refuse] false (u12102162)
-  added wayto:
-    36611: [Skyship, Research] => "go crack"
-  removed wayto:
-    36606: [Skyship, The Ropes] => "go crack"
-  added timeto:
-    36611: [Skyship, Research] => 0.2
-  removed timeto:
-    36606: [Skyship, The Ropes] => 0.2
-    added tags:   ["Node", "node", "Sanctuary", "sanctuary"]
 --------------------------------------------------
-36611 [Skyship, Research] false (u12102053)
-  added wayto:
-    36607: [Skyship, Refuse] => "go crack"
-    36612: [Skyship, Research] => "east"
-    36614: [Skyship, Research] => "north"
-    36628: [Skyship, Research Entry] => "west"
-  added timeto:
-    36607: [Skyship, Refuse] => 0.2
-    36612: [Skyship, Research] => 0.2
-    36614: [Skyship, Research] => 0.2
-    36628: [Skyship, Research Entry] => 0.2
+36629 [Arctius' General Store] -- new room
+{"id"=>36629, "title"=>["[Arctius' General Store]"], "description"=>["Refurbished driftwood walls rise from a varnished dark oak floor.  Just above a miniature Solhaven Bay model hangs a curl-edged vellum wall map, and a domed white stucco ceiling completes the picture.  A Vornavian silk-covered table stands in the middle of the room."], "paths"=>["Obvious exits: out"], "location"=>"Solhaven", "wayto"=>{"9012"=>"out"}, "timeto"=>{"9012"=>0.2}, "uid"=>[636001]}
 --------------------------------------------------
-36612 [Skyship, Research] false (u12102056)
-  added wayto:
-    36611: [Skyship, Research] => "west"
-    36613: [Skyship, Research] => "north"
-  added timeto:
-    36611: [Skyship, Research] => 0.2
-    36613: [Skyship, Research] => 0.2
---------------------------------------------------
-36613 [Skyship, Research] false (u12102055)
-  added wayto:
-    36612: [Skyship, Research] => "south"
-    36614: [Skyship, Research] => "west"
-  added timeto:
-    36612: [Skyship, Research] => 0.2
-    36614: [Skyship, Research] => 0.2
---------------------------------------------------
-36614 [Skyship, Research] false (u12102054)
-  added wayto:
-    36611: [Skyship, Research] => "south"
-    36613: [Skyship, Research] => "east"
-    36615: [Skyship, Research] => "west"
-    36616: [Skyship, Research] => "north"
-  added timeto:
-    36611: [Skyship, Research] => 0.2
-    36613: [Skyship, Research] => 0.2
-    36615: [Skyship, Research] => 0.2
-    36616: [Skyship, Research] => 0.2
-  location: '' is now 'false'
---------------------------------------------------
-36615 [Skyship, Research] false (u12102052)
-  added wayto:
-    36614: [Skyship, Research] => "east"
-    36628: [Skyship, Research Entry] => "south"
-  added timeto:
-    36614: [Skyship, Research] => 0.2
-    36628: [Skyship, Research Entry] => 0.2
---------------------------------------------------
-36616 [Skyship, Research] false (u12102057)
-  added wayto:
-    36614: [Skyship, Research] => "south"
-  added timeto:
-    36614: [Skyship, Research] => 0.2
---------------------------------------------------
-36628 [Skyship, Research Entry] -- new room
-{"id"=>36628, "title"=>["[Skyship, Research Entry]"], "description"=>["The room is largely unadorned, spare, and open, consisting of painted pure white metal bulkheads with a matching floor and ceiling.  A stone relief mounted to the bulkhead on the area's far side and is the sole distinguishing decoration.  The floor's pale, sterile grey coloration is notably marred by numerous metallic crimson stains, drag marks leading in every possible direction."], "paths"=>["Obvious exits: north, east"], "location"=>false, "wayto"=>{"36611"=>"east", "36615"=>"north"}, "timeto"=>{"36611"=>0.2, "36615"=>0.2}, "uid"=>[12102051]}
---------------------------------------------------
-old map max: 36627
-current map max: 36628
-old map size: 36602
-current map size: 36603
-15 rooms with changes found.
+old map max: 36628
+current map max: 36629
+old map size: 36603
+current map size: 36604
+11 rooms with changes found.
 1 new rooms
 0 deleted rooms
 0 room titles no longer found
 0 room descriptions no longer found
-2 new tags: ["Node", "Sanctuary"]
+0 new tags: []
 0 tags gone: []
